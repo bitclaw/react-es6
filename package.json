@@ -1,0 +1,26 @@
+{
+  "name": "react-es6",
+  "version": "1.0.0",
+  "description": "JavaScript web applicationusing React with Flux/Relay on the frontend and Node/Express with GraphQL and MongoDB on the backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitclaw/react-es6.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Daniel C. <bitclaw@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitclaw/react-es6/issues"
+  },
+  "homepage": "https://github.com/bitclaw/react-es6#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "express": "^4.14.0"
+  }
+}

@@ -1,4 +1,5 @@
 .idea/
+dist/
 
 ## File-based project format:
 *.iws

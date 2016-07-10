@@ -4,7 +4,9 @@
   "description": "JavaScript web applicationusing React with Flux/Relay on the frontend and Node/Express with GraphQL and MongoDB on the backend.",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js --presets es2015,stage-2"
+    "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist --presets es2015,stage-2",
+    "serve": "node dist/index.js"
   },
   "repository": {
     "type": "git",

@@ -5,6 +5,7 @@ https://github.com/creationix/nvm
 
 ## Babel and Node
 https://github.com/babel/example-node-server
+https://github.com/developit/express-es6-rest-api/tree/master/server
 
 ## Install Dependencies
 npm install --save-dev babel-preset-es2015

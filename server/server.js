@@ -1,8 +1,9 @@
 import http from 'http';
+import express from 'express';
 
-http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
+let app = express();
 
-console.log('Server running at http://127.0.0.1:1337/');
+app.server = http.createServer(app);
+app.get('/',(req,res) => res.send('Hello express!'));
+app.server.listen(process.env.PORT || 3000);
+console.log('Server running at http://127.0.0.1:3000/');

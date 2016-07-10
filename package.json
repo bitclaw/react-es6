@@ -4,7 +4,7 @@
   "description": "JavaScript web applicationusing React with Flux/Relay on the frontend and Node/Express with GraphQL and MongoDB on the backend.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node index.js --presets es2015,stage-2"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,13 @@
   },
   "homepage": "https://github.com/bitclaw/react-es6#readme",
   "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
-    "express": "^4.14.0"
+    "babel-preset-stage-2": "^6.11.0",
+    "nodemon": "^1.9.2"
   }
 }

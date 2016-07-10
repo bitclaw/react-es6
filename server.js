@@ -1,11 +1,8 @@
-require('babel-register')({
-    presets: [ 'es2015' ]
-});
+import http from 'http';
 
-import express from 'express';
+http.createServer((req, res) => {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
 
-let app = express();
-
-app.get('/', (req,res) => res.send('Hello Express!'));
-
-app.listen(3000);
+console.log('Server running at http://127.0.0.1:1337/');

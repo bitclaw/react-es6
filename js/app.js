@@ -1,1 +1,0 @@
-console.log('App.js was loaded successfully!');
